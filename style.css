@@ -1,0 +1,140 @@
+@import 
+url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body, html, #main {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding 0;
+}
+
+body {
+  font-family: 'Patua One', cursive;
+  color: #9E7C0C;
+  background-color: #fff;
+ }
+
+#main {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: #fff;
+  padding: 64px;
+  padding-top: 0;
+  overflow-y: scroll;
+}
+
+p {
+  line-height: 1.6em;
+}
+h1, h2 {
+  text-align: center;
+  font-family: Patua One, serif;
+  color: #002D62;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: 3px;
+}
+h2 {
+  letter-spacing: 2px;
+}
+
+figure {
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  text-align: center;
+  font-family: Patua One, serif;
+  color: #002D62;
+}
+
+h4 {
+  text-align: center;
+  font-family: Patua One, serif;
+  color: #002D62;
+}
+
+figcaption {
+  padding: 8px;
+  color: #eee;
+  background-color: #002D62;
+  /* <figcaption> does not have a positioned ancestor, so it is positioning itself relative to the <html> element */
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 4px 0 0;
+  letter-spacing: 1px;
+}
+
+
+}
+
+img {
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+a {
+  color: #EB6E1F;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  width: 80%;
+  padding: 0;
+  margin: 0 auto;
+  line-height: 2em;
+}
+li {
+  margin: 0;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin: 64px 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 32px;
+}
+
+@media (max-width: 1200px) {
+  #main {
+    grid-template-columns: 1fr;
+  }
+  figcaption {
+    border-radius: 0;
+    position: unset; /* sets it back to the initial value, static */ 
+  }
+  .container {
+    overflow-y: visible;
+  }
+}
+
+@media (max-width:400px){
+  body {
+    font-size: 14px;
+  }
+  .container{
+    padding:16px;
+  }
+}
