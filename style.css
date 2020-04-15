@@ -131,6 +131,8 @@ footer {
   }
   .container {
     overflow-y: visible;
+    right: 0px;
+    width: 50%;
   }
 }
 
