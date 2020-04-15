@@ -73,7 +73,7 @@ figcaption {
   /* <figcaption> does not have a positioned ancestor, so it is positioning itself relative to the <html> element */
   position: absolute;
   bottom: 0;
-  border-radius: 5px 0 0 0;
+  border-radius: 0 0 0 0;
   letter-spacing: 1px;
 }
 
