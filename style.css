@@ -90,7 +90,8 @@ img {
 
 .bottom-left {
   position: absolute;
-  bottom: 8px;
+  bottom: 50px;
+  left: 16px;
 }
 
 a {
