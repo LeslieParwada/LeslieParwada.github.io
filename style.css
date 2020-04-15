@@ -81,12 +81,12 @@ figcaption {
 }
 
 img {
-  width: 100%;
+  width: auto;
+  height: auto;
   max-width: 1600px;
-  min-height: 100%;
   object-fit: cover;
   display: block;
-  top: 50px;
+  top: 100px;
 }
 
 a {
