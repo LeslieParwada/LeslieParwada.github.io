@@ -88,6 +88,12 @@ img {
   display: block;
 }
 
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
 a {
   color: #EB6E1F;
   text-decoration: none;
