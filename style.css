@@ -73,7 +73,7 @@ figcaption {
   /* <figcaption> does not have a positioned ancestor, so it is positioning itself relative to the <html> element */
   position: absolute;
   bottom: 0;
-  border-radius: 0 4px 0 0;
+  border-radius: 5px 0 0 0;
   letter-spacing: 1px;
 }
 
@@ -87,13 +87,6 @@ img {
   object-fit: cover;
   display: block;
   top: 50px;
-}
-
-.bottom-left {
-  position: absolute;
-  width: 100%;
-  bottom: 50px;
-  left: 50px;
 }
 
 a {
