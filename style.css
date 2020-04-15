@@ -72,6 +72,7 @@ figcaption {
   background-color: #002D62;
   /* <figcaption> does not have a positioned ancestor, so it is positioning itself relative to the <html> element */
   position: absolute;
+  border-radius: 3px;
   letter-spacing: 1px;
 }
 
@@ -120,6 +121,7 @@ footer {
     grid-template-columns: 1fr;
   }
   figcaption {
+    border-radius: 3px;
     position: unset; /* sets it back to the initial value, static */ 
   }
   .container {
