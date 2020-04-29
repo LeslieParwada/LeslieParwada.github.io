@@ -1,92 +1,87 @@
 @import 
 url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
-body, html, #main {
+body {
   height: 100%;
-  width: 1600px;
+  width: 100%;
   margin: 0;
   padding 0;
-}
-
-body {
   font-family: 'Patua One', cursive;
   color: #9E7C0C;
   background-color: #fff;
  }
 
-#main {
-  display: grid;
-  grid-template: 1fr / 1fr 1fr;
-  max-width: 1800px;
-  margin: 0 auto;
-}
-
-.container {
-  background-color: #fff;
-  padding: 64px;
-  padding-top: 0;
-  overflow-y: scroll;
-}
-
 p {
   line-height: 1.6em;
 }
-h1, h2 {
+h1, h2, h3 {
   text-align: center;
   font-family: Patua One, serif;
-  color: #002D62;
 }
 
 h1 {
   font-size: 3em;
   letter-spacing: 3px;
 }
+
 h2 {
-  letter-spacing: 2px;
+  font-size: 3em;
+  letter-spacing: 3px;
+  color: #002D62;
+  position: relative;
+  top: 150px;
+  left: 150px;
 }
 
-figure {
+h3 {
+  letter-spacing: 2px;
+  color: #002D62;
+}
+
+main {
+  position: relative;
+  top: 180px;
+}
+
+.figure {
   text-align: center;
   margin: 0;
 }
 
-h3 {
-  text-align: center;
-  font-family: Patua One, serif;
-  color: #002D62;
-}
-
-h4 {
-  text-align: center;
-  font-family: Patua One, serif;
-  color: #002D62;
-}
 
 figcaption {
-  padding: 8px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  padding: 6px;
   color: #eee;
   background-color: #002D62;
   /* <figcaption> does not have a positioned ancestor, so it is positioning itself relative to the <html> element */
   position: absolute;
-  border-radius: 3px;
+  margin-top: 80px;
+  border radius: 3px;
   letter-spacing: 1px;
 }
 
-
+.image-section {
+  max-width: 100%;
+  margin: 0;
+  height: 650px;
+  color: #fff000;
+  background-color: #e4e4e4;
+  background-image: url(https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop_2x/f_auto/ravens/xeyqmgwkylamlxk4yf9d.jpg);
+  background-size: cover;
+  background-position: fixed;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-img {
+  
+.hero-section {
+  margin-top: 545px;
+  margin-left: 0px;
   width: auto;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  top: 100px;
 }
-
 
 a {
   color: #EB6E1F;
@@ -97,13 +92,20 @@ a:hover {
 }
 
 ul {
-  width: 80%;
-  padding: 0;
-  margin: 0 auto;
-  line-height: 2em;
-}
-li {
+  float: right;
   margin: 0;
+  width: 80%;
+  line-height: 2em;
+  display: inline-block;
+}
+
+li {
+  width: auto;
+  margin: 0;
+  vertical-align: middle;
+  position: relative;
+  top: 10px;
+  left: 80px;
 }
 
 hr {
@@ -114,7 +116,8 @@ hr {
 
 footer {
   text-align: center;
-  margin-top: 32px;
+  position: relative;
+  margin-top: 250px;
 }
 
 @media (max-width: 1200px) {
@@ -125,16 +128,17 @@ footer {
     border-radius: 3px;
     position: unset; /* sets it back to the initial value, static */ 
   }
+  
   .container {
     overflow-y: visible;
-  }
 }
+
 
 @media (max-width:400px){
   body {
     font-size: 14px;
   }
   .container{
-    padding:16px;
+    padding: 300px;
   }
 }
